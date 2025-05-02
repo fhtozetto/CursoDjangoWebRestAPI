@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -162,13 +159,15 @@
         }
 
         .main-content {
-            background: blue;
             padding-top: 0;
         }
 
-        .temp {
-            height: 40rem;
-            background: red;
+        .main-content-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: var(--spacing-gutter-large);
         }
+
+
     </style>
 </head>
