@@ -2,7 +2,7 @@
 # Curso de Django Web Framework e Django Rest Framework (DRF)
 [Link para acessar o curso na Udemy](https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/?couponCode=KEEPLEARNINGBR)
 
-### O contém no curso
+### Conteúdo do curso
 - Django Web Framework
 - Django Rest Framework para APIs
 - Django Class-based views
