@@ -1,0 +1,20 @@
+[MASTER]
+load-plugins=pylint_django
+
+[MESSAGES CONTROL]
+disable=C0111,C0103,R0903,R0913,R0914,W0621,W0611
+
+[FORMAT]
+max-line-length=88
+
+[DJANGO]
+django-settings-module=config.settings
+
+[BASIC]
+good-names=i,j,k,ex,Run,_,id,fk,url,req,res,obj,cls,self,request,response,user,app,model,view,form,admin,manager,queryset,objects,instance,args,kwargs,data,file,field,fields,value,values,key,keys,item,items,row,rows,col,cols,index,indexes,count,length,size,limit,offset,order,ordering,filter,filters,search,query,queries,result,results,error,errors,msg,message,messages,info,success,warning,error,debug,logger,log,logs,test,tests,case,cases,func,funcs,method,methods,prop,props,attr,attrs,param,params,arg,args,kwarg,kwargs,var,vars,val,vals,str,strs,int,ints,float,floats,bool,bools,list,lists,tuple,tuples,set,sets,dict,dicts,iter,iters,gen,gens,iterable,iterables,iterator,iterators,generator,generators,func,funcs,method,methods,prop,props,attr,attrs,param,params,arg,args,kwarg,kwargs,var,vars,val,vals,str,strs,int,ints,float,floats,bool,bools,list,lists,tuple,tuples,set,sets,dict,dicts,iter,iters,gen,gens,iterable,iterables,iterator,iterators,generator,generators
+
+[IMPORTS]
+ignore=
+    */tests/*
+    */__init__.py
+    */__main__.py 
