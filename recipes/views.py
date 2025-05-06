@@ -1,3 +1,4 @@
+# mypy: disallow-untyped-defs
 from django.shortcuts import render
 
 
@@ -6,7 +7,8 @@ def home(request):
         'name': 'Luiz Otávio',
     })
 
+
 def recipe(request, id):
-    return render(request, 'recipes/pages/home.html', context={
+    return render(request, 'recipes/pages/recipe-view.html', context={
         'name': 'Luiz Otávio',
     })

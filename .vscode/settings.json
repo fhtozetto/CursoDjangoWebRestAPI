@@ -4,13 +4,14 @@
     "python.testing.unittestEnabled": false, // ms-python.python
     "python.testing.pytestEnabled": true,
     "python.testing.pytestArgs": [], // -x to bail
+    //"python.linting.flake8Enabled": true,
     
     // Configurações do Pylint
     "pylint.args": [
-        "--load-plugins=pylint_django",
-        "--django-settings-module=config.settings",
-        "--max-line-length=88",
-        "--disable=C0111,C0103,R0903,R0913,R0914,W0621,W0611"
+      "--load-plugins=pylint_django",
+      "--django-settings-module=config.settings",
+      "--max-line-length=88",
+      "--disable=C0111,C0103,R0903,R0913,R0914,W0621,W0611"
     ],
     
     // Configurações do Flake8
@@ -18,19 +19,10 @@
         "--max-line-length=88",
         "--extend-ignore=E203,W503"
     ],
-    "flake8.exclude": [
-        ".git",
-        "__pycache__",
-        "build",
-        "dist",
-        ".venv",
-        ".pytest_cache",
-        "migrations"
-    ],
     
     // Configurações do MyPy
     "mypy-type-checker.args": [
-        "--python-version=3.11",
+        "--python-version=3.12.7",
         "--warn-return-any",
         "--warn-unused-configs",
         "--disallow-untyped-defs",
@@ -41,14 +33,13 @@
         "--warn-redundant-casts",
         "--warn-unused-ignores",
         "--warn-no-return",
-        "--warn-unreachable"
+        "--warn-unreachable",
     ],
 
-
-    "python.formatting.autopep8Args": ["--indent-size=4"],
+    //"python.formatting.autopep8Args": ["--indent-size=4"],
     "python.defaultInterpreterPath": ".venv/Scripts/python",
     "[python]": {
-      "editor.defaultFormatter": "ms-python.python", // ms-python.python
+      "editor.defaultFormatter": "ms-python.autopep8", // ms-python.python
       "editor.tabSize": 4,
       "editor.insertSpaces": true,
       "editor.formatOnSave": true,
