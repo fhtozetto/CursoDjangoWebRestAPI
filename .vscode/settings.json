@@ -103,5 +103,14 @@
             },
             "connectionType": "socket"
         }
-    ]
+    ],
+    "material-icon-theme.folders.associations": {
+      "projeto": "project",
+      "base_static": "resource",
+      "base_templates": "template",
+      "recipes": "app"
+    },
+      "material-icon-theme.files.associations": {
+      "fileName.ts": ""
+    }
 }
