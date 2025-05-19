@@ -9,7 +9,7 @@
     // Configurações do Pylint
     "pylint.args": [
       "--load-plugins=pylint_django",
-      "--django-settings-module=projeto.settings",
+      "--django-settings-module=project.settings",
       "--max-line-length=100",
       "--disable=C0111,C0103,R0903,R0913,R0914,W0621,W0611,E5142"
     ],
